@@ -7,7 +7,7 @@ const propertyController = require("./controllers/propertyController.js");
 
 const app = express();
 
-const allowlist = ['http://localhost:3000', 'http://127.0.0.1:3000', 'https://priceless-mirzakhani-0f2db6.netlify.app/'];
+const allowlist = ['http://localhost:3000', 'http://127.0.0.1:3000', 'https://priceless-mirzakhani-0f2db6.netlify.app'];
 const corsOptionsDelegate = function (req, callback) {
     var corsOptions;
     if (allowlist.indexOf(req.header('Origin')) !== -1) {
