@@ -7,7 +7,7 @@ const propertyController = require("./controllers/propertyController.js");
 
 const app = express();
 
-const allowlist = ['http://localhost:3000'];
+const allowlist = ['http://localhost:3000', 'http://127.0.0.1:3000'];
 const corsOptionsDelegate = function (req, callback) {
     var corsOptions;
     if (allowlist.indexOf(req.header('Origin')) !== -1) {
